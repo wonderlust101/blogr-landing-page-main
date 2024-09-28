@@ -1,0 +1,17 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+
+  &__content {
+    grid-area: 1/2;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 3.5rem 0;
+    
+    @include breakpoint(medium) {
+      padding: 4rem 0;
+    }
+  }
+}

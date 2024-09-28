@@ -1,0 +1,28 @@
+.full-sized-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: $clr-neutral-white;
+  font-weight: 700;
+
+  &__page-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__account-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__login {
+    opacity: 0.75;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+}

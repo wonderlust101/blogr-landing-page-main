@@ -3,24 +3,24 @@
 // Main Colors
 
 // Primary Colors
-$clr-primary-color-election-night: #110320;
-$clr-primary-color-fading-horizon: #442266;
-$clr-primary-color-iris-royale: #591b98;
-
-// Secondary Colors
-$clr-secondary-color-neon-spring: #3ffd6a;
-
-// Tertiary Colors
-$clr-tertiary-color-star-dust: #f9f3dd;
-$clr-tertiary-color-crackled: #f2e7d1;
+$clr-primary-color-light-red: hsl(356, 100%, 66%); // CTA Text
+$clr-primary-color-very-light-red: hsl(355, 100%, 74%); // CTA Hover Background
+$clr-primary-color-very-dark-blue: hsl(208, 49%, 24%); // Heading
 
 // Shadows
 
 // Gradients
+$clr-gradient-red: linear-gradient(135deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%); // Intro/CTA Mobile Nav
+$clr-gradient-blue: linear-gradient(135deg, hsl(237, 17%, 21%) 0%, hsl(237, 23%, 32%) 100%); // Bod
 
 // Neutrals
-$clr-white: #ffffff;
-$clr-black: #000000;
+$clr-neutral-white: hsl(0, 0%, 100%); // Text
+$clr-neutral-off-white: hsla(0, 7%, 90%); // Text
+$clr-neutral-grayish-blue: hsl(240, 2%, 79%); // Footer Text
+$clr-neutral-very-dark-grayish-blue: hsl(207, 13%, 34%); // Body Text
+$clr-neutral-dark-black-blue: hsla(237, 17%, 21%); // Footer Background
+$clr-neutral-very-dark-black-blue: hsl(240, 10%, 16%); // Footer Background
+$clr-neutral-black: hsl(0, 0%, 0%);
 
 // Specific Colors
-$clr-background: #ffffff;
+$clr-background: hsl(0, 0%, 98%);

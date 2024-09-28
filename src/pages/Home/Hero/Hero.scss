@@ -1,0 +1,47 @@
+.hero {
+  grid-area: 1/1 / 1/4;
+  border-bottom-left-radius: 6.25rem;
+  position: relative;
+  overflow: hidden;
+  background-size: 300%;
+  background: url('/images/bg-pattern-intro-mobile.svg') no-repeat top 35% left 30%, $clr-gradient-red;
+
+  @include breakpoint(medium) {
+    background: url('/images/bg-pattern-intro-desktop.svg') no-repeat top 50% left 30%, $clr-gradient-red;
+  }
+
+  &__content {
+    grid-area: 1/2;
+    display: grid;
+    justify-items: center;
+    gap: 2.5rem;
+    padding: 12rem 0 10rem;
+
+    @include breakpoint(medium) {
+      padding: 14rem 0;
+    }
+  }
+
+  &__text {
+    display: grid;
+    text-align: center;
+    color: $clr-neutral-white;
+    gap: 0.5rem;
+  }
+
+  &__body-text {
+    font-size: 1.125rem;
+    color: $clr-neutral-white;
+
+    @include breakpoint(medium) {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+  }
+}

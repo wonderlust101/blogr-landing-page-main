@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": "./", 
+    "paths": {
+      "@types/*": ["types/*"]
+    },
+    "outDir": "./dist", 
+    "moduleResolution": "node",
+    "target": "es6",
+    "module": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*", "types/*"]
+}

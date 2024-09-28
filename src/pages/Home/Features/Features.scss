@@ -1,0 +1,147 @@
+.features {
+  grid-area: 2/1 / 2/4;
+  display: grid;
+  padding: 6.25rem 0;
+  row-gap: 2rem;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+
+  &__header {
+    grid-area: 1/2;
+
+    @include breakpoint(medium) {
+      text-align: center;
+    }
+  }
+
+  &__two-row {
+    display: grid;
+    gap: 3rem;
+    justify-items: center;
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+      grid-auto-flow: column;
+      align-items: center;
+      gap: 4rem;
+    }
+  }
+
+  &__one-row {
+    grid-area: 1/2;
+    display: grid;
+    justify-items: center;
+    background-size: contain;
+
+    @include breakpoint(medium) {
+      grid-auto-flow: column;
+      align-items: center;
+    }
+  }
+
+  &__articles {
+    display: grid;
+    gap: 2.5rem;
+
+    @include breakpoint(medium) {
+      padding: 6rem 0;
+    }
+  }
+
+  &__article {
+    display: grid;
+    gap: 1rem;
+  }
+
+  &__one-row-article {
+    display: grid;
+    gap: 1rem;
+
+    @include breakpoint(medium) {
+      padding: 7rem 0;
+    }
+  }
+
+  &__one-row-article-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -0.075rem;
+    color: $clr-neutral-white;
+  }
+
+  &__one-row-article-body {
+    color: $clr-neutral-white;
+  }
+
+  &__article-img {
+    position: relative;
+    max-width: 60rem;
+    min-width: 20rem;
+
+    & > * {
+      width: 100%;
+    }
+
+    &--editor {
+      @include breakpoint(medium) {
+        order: 1;
+        left: 5.5rem;
+        width: 150%;
+      }
+    }
+
+    &--laptop {
+      @include breakpoint(medium) {
+        right: 5.5rem;
+        width: 150%;
+      }
+    }
+  }
+
+  &__phones-img {
+    position: relative;
+    bottom: 11rem;
+    margin-bottom: -11rem;
+
+    @include breakpoint(medium) {
+      min-width: 24rem;
+      bottom: unset;
+      margin: -6rem 0 -6rem;
+    }
+  }
+
+  &__editor {
+    grid-area: 2/2;
+
+    @include breakpoint(medium) {
+      grid-area: 1/2 / 1/4;
+    }
+  }
+
+  &__phones {
+    grid-area: 3/1 / 3/4;
+    margin-top: 11rem;
+    padding-bottom: 6rem;
+    border-radius: 0 6.25rem;
+    background: url('/images/bg-pattern-circles.svg') bottom 4rem center no-repeat, $clr-gradient-blue;
+
+    @include breakpoint(medium) {
+      background: url('/images/bg-pattern-circles.svg') bottom -4rem left -10rem no-repeat, $clr-gradient-blue;
+      grid-auto-flow: column;
+      align-items: center;
+      margin: 6rem 0;
+      padding-bottom: unset;
+    }
+  }
+
+  &__laptop {
+    grid-area: 4/2;
+
+    @include breakpoint(medium) {
+      grid-area: 4/1 / 4/3;
+    }
+  }
+}
