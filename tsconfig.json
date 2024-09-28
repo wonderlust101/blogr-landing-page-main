@@ -13,5 +13,5 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*", "types/*"]
+  "include": ["src/**/*", "types/*", "vite.config.ts"]
 }
