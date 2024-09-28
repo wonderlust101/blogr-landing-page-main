@@ -12,5 +12,5 @@ export default defineConfig({
             }
         }
     },
-    base: process.env.PUBLIC_URL || '/',
+    base: '/blogr-landing-page-main/'
 })
