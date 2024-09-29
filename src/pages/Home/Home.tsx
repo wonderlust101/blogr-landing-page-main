@@ -1,7 +1,7 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Hero from "./Hero/Hero";
-import Features from "./Features/Features";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Hero from "./Hero";
+import Features from "./Features";
 import './Home.scss'
 
 export default function Home() {

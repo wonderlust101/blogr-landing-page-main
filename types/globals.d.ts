@@ -5,7 +5,7 @@ declare global {
         subLinks: subLink[];
     }
 
-    type subLink = {
+    type SubLink = {
         destination: string;
         href: string;
     }

@@ -1,4 +1,4 @@
-@use  '../../assets/styles/abstract' as a;
+@use '../../assets/styles/abstract' as a;
 
 .button {
   display: block;
@@ -9,16 +9,16 @@
   border-radius: 1.75rem;
   cursor: pointer;
   transition: 0.15s;
-  
+
   &--wide {
     padding: 0.9rem 2rem;
   }
-  
+
   &--white {
     color: a.$clr-primary-color-light-red;
     background-color: a.$clr-neutral-white;
     border: 1px solid a.$clr-neutral-white;
-    
+
     &:hover {
       color: a.$clr-neutral-white;
       background-color: a.$clr-primary-color-very-light-red;

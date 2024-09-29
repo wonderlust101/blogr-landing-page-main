@@ -1,5 +1,5 @@
 import './Hero.scss'
-import Button from "../../../components/Button/Button";
+import Button from "../../../components/Button";
 
 export default function Hero() {
     return (
@@ -11,8 +11,8 @@ export default function Hero() {
                 </div>
 
                 <div className="hero__buttons">
-                    <Button className='button--white' href='#'>Start for Free</Button>
-                    <Button className='button--transparent' href='#'>Learn More</Button>
+                    <Button variant='button--white' location='#'>Start for Free</Button>
+                    <Button variant='button--transparent' location='#'>Learn More</Button>
                 </div>
             </div>
         </section>

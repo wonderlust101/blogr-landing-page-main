@@ -1,18 +1,19 @@
-import editorMobile from '/images/illustration-editor-mobile.svg';
-import editorDesktop from '/images/illustration-editor-desktop.svg';
-import laptopMobile from '/images/illustration-laptop-mobile.svg';
-import laptopDesktop from '/images/illustration-laptop-desktop.svg';
-import phone from '/images/illustration-phones.svg';
-import './Features.scss'
+import editorMobile from "/images/illustration-editor-mobile.svg";
+import editorDesktop from "/images/illustration-editor-desktop.svg";
+import laptopMobile from "/images/illustration-laptop-mobile.svg";
+import laptopDesktop from "/images/illustration-laptop-desktop.svg";
+import phone from "/images/illustration-phones.svg";
+import "./Features.scss";
 
 export default function Features() {
     return (
         <section className="features grid-bleed">
             <h2 className="features__header">Designed for the future</h2>
-            
+
             <div className="features__two-row features__editor">
-                <picture className="features__article-img features__article-img--editor" aria-hidden={true}>
-                    <source srcSet={editorDesktop} media={'(min-width: 48rem)'}/>
+                <picture aria-hidden={true} className="features__article-img 
+                                                       features__article-img--editor">
+                    <source srcSet={editorDesktop} media={"(min-width: 48rem)"}/>
                     <img src={editorMobile} alt="" role="presentation"/>
                 </picture>
 
@@ -49,8 +50,9 @@ export default function Features() {
             </div>
 
             <div className="features__two-row features__laptop">
-                <picture className="features__article-img features__article-img--laptop" aria-hidden={true}>
-                    <source srcSet={laptopDesktop} media={'(min-width: 48rem)'}/>
+                <picture aria-hidden={true} className="features__article-img 
+                                                       features__article-img--laptop">
+                    <source srcSet={laptopDesktop} media={"(min-width: 48rem)"}/>
                     <img src={laptopMobile} alt="" role="presentation"/>
                 </picture>
 
@@ -71,5 +73,5 @@ export default function Features() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

@@ -1,19 +1,27 @@
 import React from "react";
-import './Button.scss'
+import "./Button.scss";
 
 type ButtonProps = {
     children?: React.ReactNode;
-    className: string;
-    href?: string;
-    type?: string;
+    variant: string;
+    location?: string;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+    type?: "button" | "submit" | "reset";
+    ariaLabel?: string;
 }
 
-export default function Button({children, className, href}: ButtonProps): React.JSX.Element {
-    const Component = href ? 'a' : 'button';
-
+export default function Button({children, variant, location, onClick, type, ariaLabel}: ButtonProps) {
     return (
-        <Component href={href} className={'button ' + className}>
-            {children}
-        </Component>
+        <>
+            {location ? (
+                <a href={location} className={`button ${variant}`} aria-label={ariaLabel}>
+                    {children}
+                </a>
+            ) : (
+                <button type={type} className={`button ${variant}`} onClick={onClick} aria-label={ariaLabel}>
+                    {children}
+                </button>
+            )}
+        </>
     );
 }

@@ -1,19 +1,19 @@
-import HeaderLink from "./HeaderLink/HeaderLink";
-import Button from "../../Button/Button";
 import {useState} from "react";
-import './FullSizeHeader.scss'
+import HeaderLink from "./HeaderLink";
+import Button from "../../Button";
+import "./FullSizeHeader.scss";
 
 type fullSizeHeader = {
     links: Links[];
 }
 
-export default function FullSizeHeader ({links}: fullSizeHeader) {
+export default function FullSizeHeader({links}: fullSizeHeader) {
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
     const handleDropdownToggle = (header: string) => {
         setOpenDropdown((prev) => (prev === header ? null : header));
     };
-    
+
     return (
         <nav className="full-sized-header">
             <ul className="full-sized-header__page-links">
@@ -28,10 +28,10 @@ export default function FullSizeHeader ({links}: fullSizeHeader) {
                 ))}
             </ul>
 
-            <ul className="full-sized-header__account-links">
+            <div className="full-sized-header__account-links">
                 <a className="full-sized-header__login" href="#">Login</a>
-                <Button className="button--white" href="#">Sign Up</Button>
-            </ul>
+                <Button variant="button--white" location="#">Sign Up</Button>
+            </div>
         </nav>
-    )
+    );
 }
